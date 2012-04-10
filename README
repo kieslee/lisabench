@@ -1,0 +1,15 @@
+Benchmark test tools
+
+Install:
+	make
+	
+Mechanism:
+    first a number of socket(concurrency) is created, then libevent watchers for those socket are installed, then send data and recv data to(from) tested program.
+	
+Usage:
+	-c concurrency
+	-n request nums
+	-r round nums
+	-t connect type
+	-h host
+	-p port
